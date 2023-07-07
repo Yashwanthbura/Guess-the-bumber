@@ -1,7 +1,7 @@
 let button = document.getElementById("button");
 let output = document.getElementById("output");
 let input= document.getElementById("input");
-let attempts = 10;
+var attempts = 0;
 
 
 
@@ -11,27 +11,15 @@ let number = [Math.floor(Math.random()*100)+1]
 
    button.addEventListener('click',function(){
        let input = document.getElementById("input").value; 
-       attempts--;
+       attempts++;
        
-       document.getElementById("attempt").innerHTML =  "Attempts Remaining:"+attempts;
+       document.getElementById("attempt").innerHTML =  "Attempts used:"+attempts;
        
-       if(input == number){
-        output.innerHTML=`Congrats you guessed the correct answer ${number}`
-        input.disabled = true;
-        button.disabled = true;
-        document.getElementById("Game").classList.remove("new");
-        }
+       
 
-      else if (attempts === 0) {
-            output.innerHTML = 'Game over! The number was ' + number + '.';
-            disableInput();
-            document.getElementById("Game").classList.remove("new");
-            
-          } 
+     
           
-       else if(input < number){
-        output.innerHTML = "Too low! Try again!"
-       };
+       
        if(input <1){
         alert("Enter a number greater then 1")
         input.value = '';
@@ -47,17 +35,34 @@ let number = [Math.floor(Math.random()*100)+1]
         input.value = '';
         output.innerHTML = '';
        }
+       if(input < number){
+        output.innerHTML = "Too low! Try again!"
+       };
        if(input>number){
         output.innerHTML = "Too high! Try again!"
        }
+
+       if(input == number){
+        output.innerHTML=`Congrats you guessed the correct answer ${number}`
+        input.disabled = true;
+        button.disabled = true;
+        document.getElementById("Game").classList.remove("new");
+        }
+
+       else if (attempts === 10) {
+        output.innerHTML = 'Game over! The number was ' + number + '.';
+        disableInput();
+        document.getElementById("Game").classList.remove("new");
+        
+      } 
 });
 
 
 function newGame() {
   document.getElementById("Game").classList.add("new");
   
-    attempts = 10;
-    document.getElementById("attempt").innerHTML =  "Attempts Remaining:"+attempts;
+    attempts = 0;
+    document.getElementById("attempt").innerHTML =  "Attempts used:"+attempts;
 
     input.value = '';
     output.innerHTML='';
@@ -71,7 +76,7 @@ function newGame() {
       button.disabled = true;
 
       }
-    if (attempts === 0) {
+    if (attempts === 10) {
       document.getElementById("output").innerHTML = 'Game over! The number was ' + number + '.';
           disableInput();
         } 
