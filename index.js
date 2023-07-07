@@ -11,36 +11,45 @@ let number = [Math.floor(Math.random()*100)+1]
 
    button.addEventListener('click',function(){
        let input = document.getElementById("input").value; 
-       attempts++;
        
-       document.getElementById("attempt").innerHTML =  "Attempts used:"+attempts;
        
        
 
-     
+       if(input < number){
+        output.innerHTML = "Too low! Try again!"
+        attempts++;
+        document.getElementById("attempt").innerHTML="Attempts used : "+attempts;
+       };
+       if(input>number){
+        output.innerHTML = "Too high! Try again!"
+        attempts++;
+        document.getElementById("attempt").innerHTML="Attempts used : "+attempts;
+       }
           
        
        if(input <1){
         alert("Enter a number greater then 1")
-        input.value = '';
-        output.innerHTML='';
+        attempts--;
+        document.getElementById("attempt").innerHTML="Attempts used : "+attempts;
+
+        input.value = ' ';
+        output.innerHTML=' ';
        }
        if(input >100){
         alert("Enter a number between 1-100")
-        input.value = '';
-        output.innerHTML='';
+        attempts--;
+        document.getElementById("attempt").innerHTML="Attempts used : "+attempts;
+        input.value = ' ';
+        output.innerHTML=' ';
        }
        if(isNaN(input)){
         alert("Enter a valid number")
-        input.value = '';
-        output.innerHTML = '';
+        attempts--;
+        document.getElementById("attempt").innerHTML="Attempts used : "+attempts;
+        input.value = ' ';
+        output.innerHTML = ' ';
        }
-       if(input < number){
-        output.innerHTML = "Too low! Try again!"
-       };
-       if(input>number){
-        output.innerHTML = "Too high! Try again!"
-       }
+      
 
        if(input == number){
         output.innerHTML=`Congrats you guessed the correct answer ${number}`
