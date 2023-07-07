@@ -1,0 +1,80 @@
+body{
+    background-color:#dfe9b5;
+    background-image: url("dd2f4011-7921-45c7-8e48-1faf06a84212.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+#enter{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#003366;
+    font-weight: bold;
+    
+}
+#attempt{
+    font-size: 30px;
+    color: rgb(56, 121, 3);
+}
+span{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.rule{
+    font-size: 25px;
+    font-style: italic;
+}
+#output{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+    
+}
+.div1{
+    background-image: linear-gradient( rgb(27, 27, 245),rgb(240, 53, 53));
+    width: 45vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(200, 236, 165);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.div2{
+    background-color: rgb(208, 217, 218);
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    height: 55vw;
+}
+input{
+    font-size: 40px;
+    border-radius: 6px;
+}
+.new{
+    display: none;   
+}
+#Game{
+    margin-top: 30px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.795);
+}
+button{
+    font-size: 25px;
+    width: 9vw;
+    height: 4vh;
+    background-color: rgb(160, 231, 243);
+    position: relative;
+    bottom: 5px;
+    border-radius: 9px;
+}
+.heading{
+    font-size: 5em;
+    color: #726b6b;
+}
