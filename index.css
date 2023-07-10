@@ -113,3 +113,53 @@ text-shadow: 1px 1px #32557f,
 .div1 h1{
     text-shadow: 1px 1px 5px #696969 ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1325px){
+
+#input{
+    width: 34vw;
+}
+
+  .div1 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    position: relative;
+    font-size: 20px;
+  }  
+.div2{
+    height: 95vh;
+    padding-top: 7px;
+}
+#Game{
+  width: 15vw;  
+  height: 6vh;
+  margin-bottom: 20px;
+    
+}
+#attempt{
+    margin-bottom: 20px;
+}
+
+
+  
+
+}
