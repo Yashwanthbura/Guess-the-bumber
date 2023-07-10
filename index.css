@@ -4,6 +4,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 14px;
+    display: flex;
+    justify-content: center;
 }
 #enter{
     font-size: 40px;
@@ -45,8 +47,7 @@ align-items: center;
 }
 
 .div1{
-    display: grid;
-    grid-template-columns: 30% 60%;
+ display: flex;
     width: 70vw;
     height: 36vh;
     box-shadow: rgba(63, 62, 62, 0.04) 0 0 1px 0, rgb(56, 56, 56) 0 3px 10px 0;
@@ -65,8 +66,7 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    left: 10%;
+    
     height: 55vw;
 }
 input{
@@ -92,8 +92,7 @@ button{
     width: 9vw;
     height: 4vh;
     background-color: rgb(138, 229, 245);
-    position: relative;
-    bottom: 5px;
+    margin-bottom: 5px;
     border-radius: 9px;
     border: none;
     box-shadow: 3px 2px 4px ;
@@ -114,52 +113,3 @@ text-shadow: 1px 1px #32557f,
     text-shadow: 1px 1px 5px #696969 ;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:1325px){
-
-#input{
-    width: 34vw;
-}
-
-  .div1 {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    position: relative;
-    font-size: 20px;
-  }  
-.div2{
-    height: 95vh;
-    padding-top: 7px;
-}
-#Game{
-  width: 15vw;  
-  height: 6vh;
-  margin-bottom: 20px;
-    
-}
-#attempt{
-    margin-bottom: 20px;
-}
-
-
-  
-
-}
