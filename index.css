@@ -74,6 +74,7 @@ input{
     color: rgb(99, 98, 98);
     font-size: 40px;
     border-radius: 6px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.795);
     border: none;
     outline: none;
     height: 5vh;

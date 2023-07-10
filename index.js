@@ -5,6 +5,12 @@ var attempts = 0;
 
 
 
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("button").click();
+  }
+});
 
 let number = [Math.floor(Math.random()*100)+1]
 
@@ -13,6 +19,10 @@ let number = [Math.floor(Math.random()*100)+1]
 
     let input = document.getElementById("input").value; 
        
+
+
+
+
        
        
 
@@ -36,6 +46,7 @@ let number = [Math.floor(Math.random()*100)+1]
         input.value = ' ';
         output.innerHTML=' ';
        }
+       
        if(input >100){
         alert("Enter a number between 1-100")
         attempts--;
