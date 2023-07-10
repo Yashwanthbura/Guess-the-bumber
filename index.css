@@ -1,9 +1,9 @@
 body{
     background-color:#dfe9b5;
-    background-image: url("dd2f4011-7921-45c7-8e48-1faf06a84212.jpeg");
+    background-image: url("video-game-background-25.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
+    padding: 14px;
 }
 #enter{
     font-size: 40px;
@@ -12,8 +12,11 @@ body{
     font-weight: bold;
     
 }
+
+
 #attempt{
     font-size: 30px;
+    text-shadow: 1px 1px 1px black;
     color: rgb(56, 121, 3);
 }
 span{
@@ -31,50 +34,81 @@ span{
     font-weight: bolder;
     
 }
+img{
+    width: 21vw;
+}
+.div3{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .div1{
-    background-image: linear-gradient( rgb(27, 27, 245),rgb(240, 53, 53));
-    width: 45vw;
-    height: 35vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    width: 70vw;
+    height: 36vh;
+    box-shadow: rgba(63, 62, 62, 0.04) 0 0 1px 0, rgb(56, 56, 56) 0 3px 10px 0;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #297fb996,#6dd4fa9d,#ffffffb2);
+    
     font-size: 25px;
-    color: rgb(200, 236, 165);
+    color: rgb(7, 7, 7);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    
 }
 .div2{
+    
     background-color: rgb(208, 217, 218);
-    width: 60vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    left: 20%;
+    left: 10%;
     height: 55vw;
 }
 input{
+    background-color: #e4ebc9;
+    color: rgb(99, 98, 98);
     font-size: 40px;
     border-radius: 6px;
+    border: none;
+    outline: none;
+    height: 5vh;
+    padding-inline-start: 20px;
 }
 .new{
     display: none;   
 }
 #Game{
-    margin-top: 30px;
+    margin-top: 10px;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.795);
 }
 button{
     font-size: 25px;
     width: 9vw;
     height: 4vh;
-    background-color: rgb(160, 231, 243);
+    background-color: rgb(138, 229, 245);
     position: relative;
     bottom: 5px;
     border-radius: 9px;
+    border: none;
+    box-shadow: 3px 2px 4px ;
+    margin-left: 20px;
+    
 }
 .heading{
     font-size: 5em;
-    color: #726b6b;
+
+    color: #bcdce9ef;
+text-shadow: 1px 1px #32557f,
+             1px -1px #32557f,
+             -1px 1px #32557f,
+             -1px -1px #32557f,
+             3px 3px 6px rgba(0,0,0,.5);
+}
+.div1 h1{
+    text-shadow: 1px 1px 5px #696969 ;
 }

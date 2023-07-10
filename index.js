@@ -10,7 +10,8 @@ let number = [Math.floor(Math.random()*100)+1]
 
 
    button.addEventListener('click',function(){
-       let input = document.getElementById("input").value; 
+
+    let input = document.getElementById("input").value; 
        
        
        
@@ -46,7 +47,7 @@ let number = [Math.floor(Math.random()*100)+1]
         alert("Enter a valid number")
         attempts--;
         document.getElementById("attempt").innerHTML="Attempts used : "+attempts;
-        input.value = ' ';
+        input.value = '';
         output.innerHTML = ' ';
        }
       
